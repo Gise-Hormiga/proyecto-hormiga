@@ -1,0 +1,249 @@
+/* Font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Montserrat", sans-serif;
+}
+
+/* General */
+html {
+    /* 1 rem=10 px*/
+    font-size: 62.5%;
+}
+h1{
+    font-size: 6.5rem;
+}
+h2{
+    font-size: 5rem;
+}
+p{
+    font-size: 2rem;
+}
+
+/* Paleta de colores
+#f08fd4 rosa
+#ffde59 amarillo
+#475fe8 azul
+#d64e40 rojo
+#f4f4f3 gris
+ */
+
+/*Header*/
+header {
+    background-color: #f4f4f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 12vh;
+        
+}
+header img {
+    width: 130px;
+    margin: 15px 50px;
+}
+
+nav{
+    width: 40%;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.menu li a {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none; 
+}
+
+/* Main index */
+/* Banner */
+.banner {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../medios/banner-inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 40%;
+
+}
+ 
+.banner p {
+    font-size: 3.5rem;
+}
+
+
+/* Quiénes somos */
+.nosotros {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../medios/somos-hormiga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center; 
+    gap: 25px;
+}
+
+.nosotros img {
+    width: 50%;
+    height: 100vh;
+    padding: 25px
+}
+.nosotros-texto{
+    width: 50%;
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 60px;
+    padding-left: 70px;
+}
+.nosotros-texto h2 {
+    color: #f08fd4;
+}
+.nosotros-texto p {
+   height: 25%;
+   font-size: 2rem;
+   gap: 15px;
+   background-color: #d64e40;
+}
+.nosotros-boton{
+    padding: 15px;
+}
+.nosotros-boton a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+
+}
+
+/*Qué hacemos*/
+.servicios{
+   width: 100%;
+   
+}
+.grid-servicios{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   padding: 20px;
+   gap: 15px;
+   text-align: center;
+   
+}
+.servicios h2 {
+    color: #f08fd4;
+    font-size: 5rem;
+}
+.servicios p {
+    font-size: 2rem;
+    text-align: top right;
+}
+
+.servicio-1 {
+    background-color: #f08fd4;
+    font-size: 3.6rem;
+    color: white;
+}
+.servicio-2 {
+    background-color: #ffde59;
+    font-size: 3.6rem;
+    color: white;
+}
+.servicio-3 {
+    background-color: #f4f4f3;
+    font-size: 3.6rem;
+    color: white;
+}
+.servicio-4 {
+    background-color: #f4f4f3;
+    font-size: 3.6rem;
+    color: black;
+}
+.servicio-5 {
+    background-color: #d64e40;
+    font-size: 3.6rem;
+    color: white;
+}
+.servicio-6 {
+    background-color: #f08fd4;
+    font-size: 4rem;
+    color: black;
+}
+.servicio-7 {
+    background-color: #475fe8;
+    font-size: 3.6rem;
+    color: white;
+}
+
+/*Cómo lo hacemos*/
+.clientes{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../medios/somos-equipo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center; 
+    gap: 25px;
+    
+}
+.clientes img {
+    width: 50%;
+    height: 100vh;
+    padding: 25px
+}
+.clientes-texto h2 {
+    color: #f08fd4;
+      
+}
+.clientes-texto p {
+    font-size: 2rem;
+    font-size: 2rem;
+    row-gap: 15px;
+    margin-top: 15px;
+}
+
+/* Main contacto */
+.titulo-contacto{
+    color: #f08fd4;
+    font-size: 5rem;
+}
+.subtitulo-contacto {
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: #f08fd4;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer img {
+    width: 50px;
+}
