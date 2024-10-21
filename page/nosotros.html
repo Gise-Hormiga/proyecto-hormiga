@@ -8,42 +8,51 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img src="../medios/logo-hormiga-black.png" alt="logo agencia"></a>
-        <nav>
-            <ul class="menu">
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./que-hacemos.html">Qué Hacemos</a></li>
-                <li><a href="./clientes.html">Clientes</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Nos apasiona el Marketing digital</h1>
-            <p>En equipo unimos los puntos entre estrategia y creatividad, y trazamos el camino para llevar tu negocio al siguiente nivel.</p>
-            <img src="banner-nosotros" alt="">
-        </section>
-        <section>
-            <h2>Somos Hormiga</h2>
-            <p>Nuestra Misión es......</p>
-        </section>
-        <section>
-            <h2>Adn hormiga...</h2>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-    </main>
-    <footer>
-        <div> 
-            <a href="https://www.instagram.com/somos.hormiga"><img src="../medios/logo-instagram-black.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/somos-hormiga-1b704930b"><img src="../medios/logo-linkedin-black.png" alt="LinkedIn"></a>
-            <a href="https://bit.ly/holahormiga"><img src="../medios/logo-whatsapp-black.png" alt="whatsapp"></a>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../medios/logo-hormiga-black.png" alt="logo agencia"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav justify-content-end">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="./que-hacemos.html">Qué hacemos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./como-lo-hacemos.html">Cómo lo hacemos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+              </ul>
+         </div>
+      </div>
+     </nav>
+  </header>
+  <main>
+    <section class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h1>Nos apasiona el Marketing digital</h1>
+          <p>En equipo unimos los puntos entre estrategia y creatividad, así trazamos el camino para llevar tu negocio al siguiente nivel.</p>
+          <div class="contacto-boton col-6">
+            <input class="form-control form-control-lg mb-2 mt-5 btn boton" type="button" value="Empezamos!">
+          </div>
         </div>
-        <p>© 2024 Agencia Hormiga</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+          <div class="col-md-6 pt-5 pb-5 d-flex justify-content-end align-items-center">
+           <img class="mw-100" src="../medios/foto quienes somos.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div> 
+      <a href="https://www.instagram.com/somos.hormiga"><img src="../medios/logo-instagram-black.png" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/somos-hormiga-1b704930b"><img src="../medios/logo-linkedin-black.png" alt="LinkedIn"></a>
+      <a href="https://bit.ly/holahormiga"><img src="../medios/logo-whatsapp-black.png" alt="whatsapp"></a>
+    </div>
+    <p>© 2024 Agencia Hormiga</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

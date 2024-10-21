@@ -15,10 +15,13 @@ html {
     font-size: 62.5%;
 }
 h1{
-    font-size: 6.5rem;
+    color: #f08fd4;
+    font-size: 5rem;
+    font-weight: 700;
 }
 h2{
     font-size: 5rem;
+    font-weight: 700;
 }
 p{
     font-size: 2rem;
@@ -32,41 +35,35 @@ p{
 #f4f4f3 gris
  */
 
-/*Header*/
-header {
+/*HEADER*/
+/* navbar */
+.navbar{
+    width: 100%;
     background-color: #f4f4f3;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     height: 12vh;
-        
 }
-header img {
+.navbar-brand img {
     width: 130px;
     margin: 15px 50px;
 }
-
-nav{
-    width: 40%;
-}
-
-.menu {
+.navbar-nav {
     list-style-type: none;
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
     height: 100%;
-    align-items: center;
+    align-items: end;
+    column-gap: 10px;
     margin-right: 50px;
 }
-
-.menu li a {
+.nav-item a {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
     text-decoration: none; 
 }
 
-/* Main index */
+/* MAIN INDEX */
 /* Banner */
 .banner {
     width: 100%;
@@ -75,19 +72,32 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding-left: 40%;
-
 }
- 
+.banner h1{
+    font-size: 6rem;
+    color:black;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-top: 20px;
+}
 .banner p {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    margin-left: 50px;
+    margin-bottom: 45px;
 }
-
-
+.banner-boton{
+    margin-left: 50px;
+    padding-top: 50px;
+    padding: 10px 50px;
+    border: black solid 1.5px;
+    border-radius: 30px;
+    font-size: 2rem;
+    color: black;
+}
+.banner-boton:hover{
+    background-color: #f4f4f3;
+    color: black;
+}
 /* Quiénes somos */
 .nosotros {
     width: 100%;
@@ -102,11 +112,10 @@ nav{
     align-items: center; 
     gap: 25px;
 }
-
 .nosotros img {
     width: 50%;
     height: 100vh;
-    padding: 25px
+    padding: 25px;
 }
 .nosotros-texto{
     width: 50%;
@@ -116,6 +125,7 @@ nav{
     justify-content: center;
     text-align: left;
     margin-left: 60px;
+    margin-top: 45px;
     padding-left: 70px;
 }
 .nosotros-texto h2 {
@@ -125,79 +135,78 @@ nav{
    height: 25%;
    font-size: 2rem;
    gap: 15px;
-   background-color: #d64e40;
+   padding-top: 20px;
 }
 .nosotros-boton{
-    padding: 15px;
-}
-.nosotros-boton a {
+    padding: 10px 30px;
+    margin-top: 30px;
+    border: #f08fd4 solid 2px;
+    border-radius: 30px;
     font-size: 2rem;
-    color: black;
-    text-decoration: none;
-
+    color: #f08fd4;
 }
-
+.nosotros-boton:hover{
+    background-color: #f08fd4;
+    color: #f4f4f3;
+}
 /*Qué hacemos*/
-.servicios{
-   width: 100%;
-   
-}
 .grid-servicios{
+   width: 100%;
+   height: 100vh;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: repeat(2, 1fr);
-   padding: 20px;
    gap: 15px;
-   text-align: center;
-   
+   padding: 15px;
 }
-.servicios h2 {
-    color: #f08fd4;
-    font-size: 5rem;
-}
-.servicios p {
-    font-size: 2rem;
-    text-align: top right;
-}
-
 .servicio-1 {
     background-color: #f08fd4;
-    font-size: 3.6rem;
     color: white;
 }
 .servicio-2 {
     background-color: #ffde59;
-    font-size: 3.6rem;
     color: white;
 }
 .servicio-3 {
-    background-color: #f4f4f3;
-    font-size: 3.6rem;
+    background-color: #e2e2e2;
     color: white;
 }
 .servicio-4 {
-    background-color: #f4f4f3;
-    font-size: 3.6rem;
+    background-color: #e2e2e2;
     color: black;
 }
 .servicio-5 {
     background-color: #d64e40;
-    font-size: 3.6rem;
     color: white;
 }
 .servicio-6 {
     background-color: #f08fd4;
-    font-size: 4rem;
     color: black;
 }
 .servicio-7 {
     background-color: #475fe8;
-    font-size: 3.6rem;
     color: white;
 }
-
+.grid-servicios .servicio-1, .servicio-2, .servicio-3, .servicio-4, .servicio-5, .servicio-6, .servicio-7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+.servicios-titulo h2{
+    color: #f08fd4;
+    padding: 5px 15px;
+}
+.servicios-titulo p{
+    padding: 5px 15px ;
+}
+.grid-servicios h3{
+    font-size: 3.6rem;
+    font-weight: 700;
+}
 /*Cómo lo hacemos*/
-.clientes{
+.hacer{
     width: 100%;
     height: 100vh;
     background-image: url(../medios/somos-equipo.png);
@@ -209,34 +218,100 @@ nav{
     justify-content: left;
     align-items: center; 
     gap: 25px;
-    
 }
-.clientes img {
+.hacer img {
     width: 50%;
     height: 100vh;
-    padding: 25px
+    padding: 25px;
 }
-.clientes-texto h2 {
+.hacer-texto{
+    width: 50%;
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding-right: 70px;
+}
+.hacer-texto h2 {
+    color: #f08fd4;   
+    padding-left: 25px;
+}
+.hacer-texto p {
+    font-size: 2rem;
+    gap: 15px;
+    padding: 25px;
+}
+.hacer-boton{
+    width: 25%;
+    padding: 10px 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    border: #f08fd4 solid 2px;
+    border-radius: 30px;
+    font-size: 2rem;
     color: #f08fd4;
-      
 }
-.clientes-texto p {
-    font-size: 2rem;
-    font-size: 2rem;
-    row-gap: 15px;
-    margin-top: 15px;
+.hacer-boton:hover{
+    background-color: #f08fd4;
+    color: #f4f4f3;
 }
+/* FINAL DEL MAIN INDEX */
 
-/* Main contacto */
-.titulo-contacto{
+/* MAIN SERVICIOS */
+
+/* MAIN CONTACTO*/
+.contacto{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../medios/fondo-accion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-contacto h1{
     color: #f08fd4;
     font-size: 5rem;
+    text-align: center;
 }
-.subtitulo-contacto {
+.titulo-contacto p{
+    text-align: center;
+}
+.boton{
+    padding: 10px 30px;
+    border: #ffde59 solid 2px;
+    border-radius: 30px;
     font-size: 2rem;
+    color: #ffde59;
+  
+}
+.boton:hover{
+    background-color:#ffde59;
+    color: #f4f4f3;
 }
 
-/* Footer */
+/* MAIN CÓMO LO HACEMOS */
+.nuestro-hacer{
+    width: 100%;
+    height: 90vh;
+}
+.titulo-hacer h1{
+    color: #f08fd4;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 10px;
+}
+.titulo-hacer p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+/* FOOTER */
 footer {
     width: 100%;
     height: 15vh;
