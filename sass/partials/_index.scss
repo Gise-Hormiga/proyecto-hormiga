@@ -1,0 +1,152 @@
+/*index-banner*/
+.banner{
+    @include medidaSection (100%, 90vh);
+    background-image: url(../medios/banner-inicio.jpg);
+    @include backgroundSection (no-repeat, cover, center);
+    
+    h1{
+        width: 100%;
+        font-size: 5.5rem;
+        color:black;
+        margin-top: 50px;
+        padding-left: 35px;
+        padding-top: 50px;
+    }
+    p{
+        width: 100%;
+        font-size: 3rem;
+        margin-bottom: 40px; 
+        padding-left: 35px;
+    }
+    button{
+        margin-left: 30px;
+        padding: 10px 15px;
+        border: black solid 1.5px;
+        border-radius: 30px;
+        font-size: 2rem;
+        color: black;
+        &:hover{
+            background-color: $gris;
+            color: black;
+        }
+    }
+}
+/*index-quiénes somos*/
+.nosotros {
+    @include medidaSection (100%, 100%);
+    background-image: url(../medios/somos-hormiga.png);
+    @include backgroundSection (no-repeat, cover, center);
+    .texto{
+        h2 {
+            padding-top: 50px;
+            padding-left: 15px;
+            width: 100%;
+            color: $rosa; 
+        }
+        p {
+            padding-top: 10px;
+            padding-left: 15px;
+            font-size: 2rem;
+            gap: 15px;
+        }
+        button{
+            @extend .button;
+            
+        }
+    }
+    img{
+        padding-top:50px; 
+        padding-bottom: 50px;
+    }
+} 
+/*index-qué hacemos*/
+.servicios-index{
+    @include medidaSection (100%, 100%);
+    padding: 25px;
+          
+    .tituloservicios{
+        h2{
+            color: $rosa;
+            padding-left: 20px; 
+            padding-top: 20px;  
+        }
+        p{
+            padding-left: 20px;
+        }
+    }
+   
+    h3{
+       font-size: 3.6rem;
+       font-weight: 700;
+    }
+    
+    .servicios-titulo, .servicio-1, .servicio-2, .servicio-3, .servicio-4, .servicio-5, .servicio-6, .servicio-7{
+        @include flex (column, center, center);
+        text-align: center;
+    
+    }
+    .servicio-1 {
+        height: 50vh;
+        background-color: $rosa;
+        color: white;
+    }
+    .servicio-2 {
+        height: 50vh;
+        background-color: $grismas;
+        color: white;
+    }
+    .servicio-3 {
+        height: 50vh;
+        background-color: $amarillo;
+        color: white;
+    }
+    .servicio-4 {
+        height: 50vh;
+        background-color: $grismas;
+        color: black;
+    }
+    .servicio-5 {
+        height: 50vh;
+        background-color: $rojo;
+        color: white;
+    }
+    .servicio-6 {
+        height: 50vh;
+        background-color: $rosa;
+        color: black;
+    }
+    .servicio-7 {
+        height: 50vh;
+        background-color: $azul;
+        color: white;
+    }
+}
+    
+
+/*index-cómo lo hacemos*/
+.hacer{
+    @include medidaSection (100%, 100%);
+    background-image: url(../medios/somos-equipo.png);
+    @include backgroundSection (no-repeat, cover, center);
+    padding-bottom: 40px;
+    padding-top: 50px;
+    img{
+        padding-top:50px;
+        padding-bottom: 20px;
+    }
+    h2 {
+        width: 100%;
+        color: $rosa; 
+        margin-top: 20px;  
+        padding-left: 15px;    
+    }
+    p {
+        font-size: 2rem;
+        padding-left: 15px;
+        padding-top: 10px;
+        gap: 15px;
+    }
+    button{
+        @extend .button;
+    }
+}

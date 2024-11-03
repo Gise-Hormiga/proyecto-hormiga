@@ -1,0 +1,66 @@
+/* Font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Montserrat", sans-serif;
+}
+
+//Paleta de colores
+ $rosa:#f08fd4;
+ $amarillo:#ffde59;
+ $azul:#475fe8;
+ $rojo:#d64e40;
+ $gris:#f4f4f3;
+ $grismas:#e2e2e2;
+
+ /* General */
+html {
+    /* 1 rem=10 px*/
+    font-size: 62.5%;
+}
+h1{
+    color: $rosa;
+    font-size: 5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 5rem;
+    font-weight: 700;
+}
+p{
+    font-size: 2rem;
+}
+
+@mixin backgroundSection ($repeat, $size, $position){
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+}
+
+@mixin medidaSection ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin flex ($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.button{
+    padding: 10px 30px;
+    border: $rosa solid 2px;
+    border-radius: 30px;
+    font-size: 2rem;
+    color: $rosa;
+    &:hover{
+        background-color: $rosa;
+        color: $gris;
+    }
+}  

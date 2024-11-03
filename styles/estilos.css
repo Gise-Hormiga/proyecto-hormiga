@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/* Font*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: "Montserrat", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* General */
+html {
+  /* 1 rem=10 px*/
+  font-size: 62.5%;
+}
+
+h1 {
+  color: #f08fd4;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.button, .somos .texto-somos button, .hacer button, .nosotros .texto button {
+  padding: 10px 30px;
+  border: #f08fd4 solid 2px;
+  border-radius: 30px;
+  font-size: 2rem;
+  color: #f08fd4;
+}
+.button:hover, .somos .texto-somos button:hover, .hacer button:hover, .nosotros .texto button:hover {
+  background-color: #f08fd4;
+  color: #f4f4f3;
+}
+
+/*header*/
+.navbar {
+  width: 100%;
+  background-color: #f4f4f3;
+  display: flex;
+  flex-direction: row;
+  height: 12vh;
+}
+.navbar img {
+  width: 130px;
+  margin: 30px 50px;
+}
+.navbar .navbar-collapse {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f3;
+}
+.navbar .navbar-nav {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  align-items: end;
+  column-gap: 10px;
+  padding-right: 60px;
+}
+.navbar .navbar-nav a {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #f08fd4;
+  text-align: center;
+  padding-top: 10px;
+}
+.footer img {
+  width: 50px;
+}
+.footer p {
+  font-size: 1.5rem;
+}
+
+/*index-banner*/
+.banner {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../medios/banner-inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner h1 {
+  width: 100%;
+  font-size: 5.5rem;
+  color: black;
+  margin-top: 50px;
+  padding-left: 35px;
+  padding-top: 50px;
+}
+.banner p {
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  padding-left: 35px;
+}
+.banner button {
+  margin-left: 30px;
+  padding: 10px 15px;
+  border: black solid 1.5px;
+  border-radius: 30px;
+  font-size: 2rem;
+  color: black;
+}
+.banner button:hover {
+  background-color: #f4f4f3;
+  color: black;
+}
+
+/*index-quiénes somos*/
+.nosotros {
+  width: 100%;
+  height: 100%;
+  background-image: url(../medios/somos-hormiga.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.nosotros .texto h2 {
+  padding-top: 50px;
+  padding-left: 15px;
+  width: 100%;
+  color: #f08fd4;
+}
+.nosotros .texto p {
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 2rem;
+  gap: 15px;
+}
+.nosotros img {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*index-qué hacemos*/
+.servicios-index {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+.servicios-index .tituloservicios h2 {
+  color: #f08fd4;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.servicios-index .tituloservicios p {
+  padding-left: 20px;
+}
+.servicios-index h3 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.servicios-index .servicios-titulo, .servicios-index .servicio-1, .servicios-index .servicio-2, .servicios-index .servicio-3, .servicios-index .servicio-4, .servicios-index .servicio-5, .servicios-index .servicio-6, .servicios-index .servicio-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.servicios-index .servicio-1 {
+  height: 50vh;
+  background-color: #f08fd4;
+  color: white;
+}
+.servicios-index .servicio-2 {
+  height: 50vh;
+  background-color: #e2e2e2;
+  color: white;
+}
+.servicios-index .servicio-3 {
+  height: 50vh;
+  background-color: #ffde59;
+  color: white;
+}
+.servicios-index .servicio-4 {
+  height: 50vh;
+  background-color: #e2e2e2;
+  color: black;
+}
+.servicios-index .servicio-5 {
+  height: 50vh;
+  background-color: #d64e40;
+  color: white;
+}
+.servicios-index .servicio-6 {
+  height: 50vh;
+  background-color: #f08fd4;
+  color: black;
+}
+.servicios-index .servicio-7 {
+  height: 50vh;
+  background-color: #475fe8;
+  color: white;
+}
+
+/*index-cómo lo hacemos*/
+.hacer {
+  width: 100%;
+  height: 100%;
+  background-image: url(../medios/somos-equipo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 40px;
+  padding-top: 50px;
+}
+.hacer img {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.hacer h2 {
+  width: 100%;
+  color: #f08fd4;
+  margin-top: 20px;
+  padding-left: 15px;
+}
+.hacer p {
+  font-size: 2rem;
+  padding-left: 15px;
+  padding-top: 10px;
+  gap: 15px;
+}
+.somos {
+  width: 100%;
+  height: 100%;
+}
+.somos .texto-somos h1 {
+  padding: 10px;
+  color: #f08fd4;
+  font-size: 5rem;
+}
+.somos .texto-somos p {
+  padding: 10px;
+  font-size: 2rem;
+  gap: 15px;
+}
+.somos .imagen-somos img {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*main-cómo lo hacemos*/
+.nuestro-hacer {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.nuestro-hacer h1 {
+  color: #f08fd4;
+  font-size: 5rem;
+  text-align: center;
+}
+.nuestro-hacer p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.nuestro-hacer .header-acordion {
+  border: #e2e2e2 solid 2px;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+/*main-qué hacemos*/
+.servicios {
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.servicios .tarjetas1 .card {
+  padding-bottom: 50px;
+}
+.servicios .tarjetas1 h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.servicios .tarjetas1 .accion {
+  background-color: #f4f4f3;
+  border: #e2e2e2 solid 1.5px;
+  border-radius: 5px;
+}
+.servicios .tarjetas1 .accion h2 {
+  color: #f08fd4;
+  padding-left: 25px;
+  padding-top: 40px;
+}
+
+/*main-contacto*/
+.contacto {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(../medios/fondo-accion.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto h1 {
+  color: #f08fd4;
+  font-size: 5rem;
+  text-align: center;
+}
+.contacto p {
+  text-align: center;
+}
+.contacto .boton {
+  padding: 10px 30px;
+  border: #ffde59 solid 2px;
+  border-radius: 30px;
+  font-size: 2rem;
+  color: #ffde59;
+}
+.contacto .boton:hover {
+  background-color: #ffde59;
+  color: #f4f4f3;
+}
+
+/*# sourceMappingURL=estilos.css.map */

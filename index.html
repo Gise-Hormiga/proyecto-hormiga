@@ -4,105 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia de Marketing Digital a medida|Hormiga</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/estilos.css">
 </head>
 <body>
-  <!--Encabezado-->
-  <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html"><img src="./medios/logo-hormiga-black.png" alt="logo agencia"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav justify-content-end">
-                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
-                     <li class="nav-item"><a class="nav-link" href="./page/nosotros.html">Nosotros</a></li>
-                     <li class="nav-item"><a class="nav-link" href="./page/que-hacemos.html">Qué hacemos</a></li>
-                     <li class="nav-item"><a class="nav-link" href="./page/como-lo-hacemos.html">Cómo lo hacemos</a></li>
-                     <li class="nav-item"><a class="nav-link" href="./page/contacto.html">Contacto</a></li>
-                    </ul>
-              </div>
-            </div>
-        </nav>
-  </header>
+   <!--Encabezado-->
+   <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./medios/logo-hormiga-black.png" alt="logo agencia"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="./page/nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="./page/que-hacemos.html">Qué hacemos</a></li>
+              <li class="nav-item"><a class="nav-link" href="./page/como-lo-hacemos.html">Cómo lo hacemos</a></li>
+              <li class="nav-item"><a class="nav-link" href="./page/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+   </header>
    <main>
       <!-- Banner -->
-      <section class="banner d-flex justify-content-center align-items-center">
-        <div>
-          <h1 class="">Marketing Digital<br>a tu Medida</h1>
-          <p class="">Agencia Hormiga</p>
+      <section class="banner container-fluid d-flex justify-content-end align-items-center">
+        <div class="row col-12 col-md-12 col-xl-8">
+          <h1>Marketing Digital<br>a tu Medida</h1>
+          <p>Agencia Hormiga</p>
           <!-- consultar sobre agregar botón, si está ok el de servicios -->
-          <button type="button" class="btn btn-outline banner-boton"><a href="./page/contacto.html"></a>Hablemos!</button>
+          <button type="button" class="btn btn-outline col-6 col-md-3 col-xl-3 animate__animated animate__flash animate__slow animate__repeat-3"><a href="../page/contacto.html"></a>Hablemos!</button>
         </div>
-          
       </section>
 
       <!-- Quiénes somos -->
       <section class="nosotros">
-        <div class="nosotros-texto">
-          <h2>Quiénes <br>Somos:</h2>
-          <p>Una agencia de Marketing digital con propósito. <br> Pensamos como una organización, implementamos<br>como una agencia creativa.
-          <br>Creamos y diseñamos estrategias a medida, las ejecutamos ágilmente en función de tus necesidades y objetivos.<p>
-          <!-- <button class="nosotros-boton"><a href="./page/nosotros.html">Conocenos</a></button> -->
-           <button type="button" class="btn btn-outline nosotros-boton"><a href="./page/nosotros.html"></a>Conocenos</button>
-        </div>
-        <img src="./medios/nuestro-adn.png" alt="propósito hormiga">      
+        <div class="container">
+          <div class="row">
+            <div class="texto col-12 col-md-6 col-xl-6 d-flex flex-column justify-content-center">
+              <h2>Quiénes <br>Somos:</h2>
+              <p>Una agencia de Marketing digital con propósito. <br> Pensamos como una organización, implementamos como <br>una agencia creativa.
+              <br>Creamos y diseñamos estrategias a medida, las ejecutamos <br> ágilmente en función de tus necesidades y objetivos.<p>
+              <!-- <button class="nosotros-boton"><a href="./page/nosotros.html">Conocenos</a></button> -->
+              <button type="button" class="btn btn-outline col-6 col-md-6 col-xl-4 p-3 mb-2 mt-5"><a href="./page/nosotros.html"></a>Conocenos</button>
+            </div>
+            <div class="col-12 col-md-6 col-xl-6 d-flex justify-content-end align-items-center">
+              <img class="mw-100" src="./medios/nuestro adn.png" alt="propósito hormiga">
+            </div>
+          </div>
+        </div>     
       </section>
 
       <!-- Qué hacemos -->
-      <section class="grid-servicios">
-        <div class="servicios-titulo"> 
-          <h2>Qué <br>hacemos</h2>
-          <p>Nuestra brújula es la innovación.</p>
-          <a href="./page/que-hacemos.html"><img src="./medios/flecha-red.png" alt="qué hacemos"></a>
-        </div>
-        <div class="servicio-1">
-          <h3>Estrategia</h3>
-        </div>
-        <div class="servicio-2">
-          <h3>Paid <br>Media</h3>
-        </div>
-        <div class="servicio-3">
-          <h3>Seo</h3>
-        </div>
-        <div class="servicio-7">
-          <h3>Coaching <br> para Equipos</h3>
-        </div>   
-        <div class="servicio-4">
-          <h3>Diseño</h3>
-        </div>
-          <div class="servicio-5">
-          <h3>Redes <br> Sociales</h3>
-        </div>
-        <div class="servicio-6">
-           <h3>Desarrollo <br>Web</h3>
-        </div>
-            
+      <section class="servicios-index">
+        <div class="row d-flex align-items-center g-2"> 
+          <div class="tituloservicios col-12 col-md-6 col-xl-3">
+            <h2>Qué <br>hacemos:</h2>
+            <p>Nuestra brújula es la innovación.</p>
+            <a href="./page/que-hacemos.html"><img src="./medios/flecha-red.png" alt="qué hacemos"></a>
+          </div>
+          <div class="card servicio-1 col-12 col-md-6 col-xl-3">
+            <h3>Estrategia</h3>
+          </div>
+          <div class="card servicio-2 col-12 col-md-6 col-xl-3">
+            <h3>Paid <br>Media</h3>
+          </div>
+          <div class="card servicio-3 col-12 col-md-6 col-xl-3">
+            <h3>Seo</h3>
+          </div>
+          <div class="card servicio-7 col-12 col-md-6 col-xl-3">
+            <h3>Coaching <br> para Equipos</h3>
+          </div>   
+          <div class="card servicio-4 col-12 col-md-6 col-xl-3">
+            <h3>Diseño</h3>
+          </div>
+            <div class="card servicio-5 col-12 col-md-6 col-xl-3">
+            <h3>Redes <br> Sociales</h3>
+          </div>
+          <div class="card servicio-6 col-12 col-md-6 col-xl-3">
+             <h3>Desarrollo <br>Web</h3>
+          </div>   
+        </div>                
       </section>
       <!-- Cómo lo hacemos -->
       <section class="hacer">
-        <img src="./medios/cliente-centricos.png" alt="foco hormiga">
-        <div class="hacer-texto">
-          <h2>Cómo lo <br>hacemos:</h2>
-          <p>Estamos convencidos que el éxito se contruye en equipo.<br>Somos cliente céntricos, nuestro foco está en tus objetivos.<br>¡Juntos vamos a lograr resultados reales!</p>
-          <button type="button" class="btn btn-outline hacer-boton"><a href="./page/como-lo-hacemos.html"></a>Más Info</button>
-        </div>
-        <!-- en esta sección poner botón a pág clientes <a href="./page/clientes.html"></a> -->
-        <!-- me gustaría en la pág de esta sección poner logos de clientes -->
-      </section>       
-   </main>
-    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-6 d-flex justify-content-center align-items-center">
+              <img class="mw-100" src="./medios/cliente centricos.png" alt="foco hormiga">
+            </div>
+            <div class="textohacer col-12 col-md-6 col-xl-6 d-flex flex-column justify-content-center">
+              <h2>Cómo lo <br>hacemos:</h2>
+              <p>Estamos convencidos que el éxito se contruye en equipo.<br>Somos cliente céntricos, nuestro foco está en tus objetivos.<br>¡Juntos vamos a lograr resultados reales!<p>
+              <button type="button" class="btn btn-outline col-6 col-md-6 col-xl-4 mb-2 mt-5"><a href="./page/como-lo-hacemos.html"></a>Más info!</button>
+            </div>
+          </div>
+        </div>     
+      </section>
+      <!-- en esta sección poner botón a pág clientes <a href="./page/clientes.html"></a> -->
+      <!-- me gustaría en la pág de esta sección poner logos de clientes -->
+      
+    </main>
+    <footer class="footer">
       <div> 
-        <a href="https://www.instagram.com/somos.hormiga"><img src="./medios/logo-instagram-black.png" alt="Instagram"></a>
-        <a href="https://www.linkedin.com/in/somos-hormiga-1b704930b"><img src="./medios/logo-linkedin-black.png" alt="LinkedIn"></a>
-        <a href="https://bit.ly/holahormiga"><img src="./medios/logo-whatsapp-black.png" alt="whatsapp"></a>
+        <a href="https://www.instagram.com/somos.hormiga"><img src="../medios/logo-instagram-black.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/somos-hormiga-1b704930b"><img src="../medios/logo-linkedin-black.png" alt="LinkedIn"></a>
+        <a href="https://bit.ly/holahormiga"><img src="../medios/logo-whatsapp-black.png" alt="whatsapp"></a>
       </div>
       <p>© 2024 Agencia Hormiga</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

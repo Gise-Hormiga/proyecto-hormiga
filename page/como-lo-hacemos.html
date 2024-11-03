@@ -4,73 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
 </head>
 <body>
-  <div class="contenedor">
-   <header>
-     <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg">
-       <div class="container-fluid">
-         <a class="navbar-brand" href="../index.html"><img src="../medios/logo-hormiga-black.png" alt="logo agencia"></a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../medios/logo-hormiga-black.png" alt="logo agencia"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarNav">
-           <ul class="navbar-nav justify-content-end">
-             <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-             <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
-             <li class="nav-item"><a class="nav-link" href="./que-hacemos.html">Qué hacemos</a></li>
-             <li class="nav-item"><a class="nav-link active" aria-current="page" href="./como-lo-hacemos.html">Cómo lo hacemos</a></li>
-             <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-           </ul>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./que-hacemos.html">Qué hacemos</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./como-lo-hacemos.html">Cómo lo hacemos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+          </ul>
          </div>
-       </div>
-     </nav>
-   </header>
-   <main>
-     <!-- Cómo lo hacemos -->
-     <section class="container nuestro-hacer">
-        <!-- <div class="titulo-hacer col-12 col-md-12 col-lg-12 mt-5">
-        <h1>¿Cómo lo hacemos?</h1>
-        <p>Siempre es ganar-ganar. Tu negocio crece, nosotros crecemos con él </p>
-        </div> -->
-       <!-- acordeon como lo hacemos -->
-       <div class="row">
-         <div class="col-md-6 d-flex align-items-center">
-           <img class="mw-100 p-5" src="../medios/foto como lo hacemos.png" alt="">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Cómo lo hacemos -->
+    <section class="container nuestro-hacer">
+      <!-- acordeon como lo hacemos -->
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <img class="mw-100 p-4" data-aos="zoom-in" data-aos-duration="3000" src="../medios/foto como lo hacemos.png" alt="postit">
         </div>
-        <div class="accordion accordion-flush col-md-6 d-flex flex-column justify-content-center" id="accordionFlushExample">
+        <div class="accordion accordion-flush col-12 col-md-6 col-xl-6 d-flex flex-column justify-content-center p-4" id="accordionFlushExample">
           <h1>¿Cómo lo hacemos?</h1>
-          <p class="mb-5">Siempre es ganar-ganar. Tu negocio crece, nosotros crecemos con él. </p>
+          <p class="mb-3">Siempre es ganar-ganar. Tu negocio crece, nosotros crecemos con él. </p>
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <strong>EVALUACIÓN</strong>
+            <h2 class="accordion-header header-acordion">
+              <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <strong>EVALUACIÓN</strong>
               </button>
             </h2>
-           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+           <div id="flush-collapseOne" class="accordion-collapse collapse p-4" data-bs-parent="#accordionFlushExample">
              <div class="accordion-body form-control form-control-lg">
               Realizamos un análisis profundo nos permite entender tus fortalezas y debilidades, garantizando un enfoque preciso y efectivo.
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <h2 class="accordion-header header-acordion">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
               <strong>ESTRATEGIA</strong>
             </button>
           </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapseTwo" class="accordion-collapse collapse p-4" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body form-control form-control-lg">
              Desarrollamos estrategias personalizadas basadas en la evaluación, enfocándonos en tus objetivos comerciales.
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <h2 class="accordion-header header-acordion">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
              <strong>EJECUCIÓN</strong>
             </button>
           </h2>
@@ -81,30 +78,31 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          <h2 class="accordion-header header-acordion">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
              <strong>CRECIMIENTO</strong>
             </button>
           </h2>
-           <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-             <div class="accordion-body form-control form-control-lg">
-               Fomentamos tu crecimiento mediante la monitorización y ajuste de nuestras tácticas, asegurando resultados sostenibles y constantes.
-             </div>
-           </div>
+          <div id="flush-collapseFour" class="accordion-collapse collapse p-4" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body form-control form-control-lg">
+              Fomentamos tu crecimiento mediante la monitorización y ajuste de nuestras tácticas, asegurando resultados sostenibles y constantes.
+            </div>
+          </div>
         </div>
-       </div>
+      </div>
      </section>
-   </main>
-    
-   <footer>
-     <div> 
-        <a href="https://www.instagram.com/somos.hormiga"><img src="../medios/logo-instagram-black.png" alt="Instagram"></a>
-        <a href="https://www.linkedin.com/in/somos-hormiga-1b704930b"><img src="../medios/logo-linkedin-black.png" alt="LinkedIn"></a>
-        <a href="https://bit.ly/holahormiga"><img src="../medios/logo-whatsapp-black.png" alt="whatsapp"></a>
-     </div>
-     <p>© 2024 Agencia Hormiga</p>
-   </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- </div>
+  </main>
+  <footer class="footer">
+    <div> 
+      <a href="https://www.instagram.com/somos.hormiga"><img src="../medios/logo-instagram-black.png" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/somos-hormiga-1b704930b"><img src="../medios/logo-linkedin-black.png" alt="LinkedIn"></a>
+      <a href="https://bit.ly/holahormiga"><img src="../medios/logo-whatsapp-black.png" alt="whatsapp"></a>
+    </div>
+    <p>© 2024 Agencia Hormiga</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
