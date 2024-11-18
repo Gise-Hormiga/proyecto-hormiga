@@ -30,14 +30,14 @@ p {
   font-size: 2rem;
 }
 
-.button, .somos .texto-somos button, .hacer button, .nosotros .texto button {
+.button, .somos-diferentes .texto-somos button, .somos .texto-somos button, .hacer button, .nosotros .texto button {
   padding: 10px 30px;
   border: #f08fd4 solid 2px;
   border-radius: 30px;
   font-size: 2rem;
   color: #f08fd4;
 }
-.button:hover, .somos .texto-somos button:hover, .hacer button:hover, .nosotros .texto button:hover {
+.button:hover, .somos-diferentes .texto-somos button:hover, .somos .texto-somos button:hover, .hacer button:hover, .nosotros .texto button:hover {
   background-color: #f08fd4;
   color: #f4f4f3;
 }
@@ -48,11 +48,9 @@ p {
   background-color: #f4f4f3;
   display: flex;
   flex-direction: row;
-  height: 12vh;
 }
 .navbar img {
   width: 130px;
-  margin: 30px 50px;
 }
 .navbar .navbar-collapse {
   width: 100%;
@@ -65,7 +63,6 @@ p {
   height: 100%;
   align-items: end;
   column-gap: 10px;
-  padding-right: 60px;
 }
 .navbar .navbar-nav a {
   color: black;
@@ -246,7 +243,7 @@ p {
 .somos .texto-somos h1 {
   padding: 10px;
   color: #f08fd4;
-  font-size: 5rem;
+  font-size: 3.8rem;
 }
 .somos .texto-somos p {
   padding: 10px;
@@ -254,6 +251,25 @@ p {
   gap: 15px;
 }
 .somos .imagen-somos img {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.somos-diferentes {
+  width: 100%;
+  height: 100%;
+}
+.somos-diferentes .texto-somos h2 {
+  padding: 10px;
+  color: #f08fd4;
+  font-size: 3.8rem;
+}
+.somos-diferentes .texto-somos p {
+  padding: 10px;
+  font-size: 2rem;
+  gap: 15px;
+}
+.somos-diferentes .imagen-somos img {
   padding-top: 40px;
   padding-bottom: 40px;
 }

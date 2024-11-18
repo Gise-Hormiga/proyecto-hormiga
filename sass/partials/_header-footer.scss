@@ -4,12 +4,11 @@
     background-color: $gris;
     display: flex;
     flex-direction: row;
-    height: 12vh;
-    
+      
     img {
         width: 130px;
-        margin: 30px 50px;
     }
+    
     .navbar-collapse{
         @include medidaSection (100%, 100%);
         background-color: $gris;
@@ -19,7 +18,6 @@
         @include medidaSection (100%, 100%);
         align-items: end;
         column-gap: 10px;
-        padding-right: 60px;
         a{
            color: black;
            font-size: 1.6rem;
@@ -28,6 +26,7 @@
         }
     }
 }
+
 /*footer*/
 .footer {
     width: 100%;

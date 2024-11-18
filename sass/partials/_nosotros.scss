@@ -4,7 +4,7 @@
     h1 {
       padding: 10px;
       color: $rosa;
-      font-size: 5rem;
+      font-size: 3.8rem;
     }
     p {
       padding: 10px;
@@ -20,4 +20,27 @@
     padding-bottom: 40px;
   }
 } 
+.somos-diferentes{
+  @include medidaSection (100%, 100%);
+  .texto-somos{
+    h2 {
+      padding: 10px;
+      color: $rosa;
+      font-size: 3.8rem;
+    }
+    p {
+      padding: 10px;
+      font-size: 2rem;
+      gap: 15px;
+    }
+    button{
+      @extend .button;
+    }
+  }
+  .imagen-somos img{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+}
 
