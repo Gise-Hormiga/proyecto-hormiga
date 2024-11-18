@@ -58,9 +58,14 @@ p{
     border: $rosa solid 2px;
     border-radius: 30px;
     font-size: 2rem;
-    color: $rosa;
+    a{
+        color: $rosa;
+        text-decoration: none;
+    }
     &:hover{
         background-color: $rosa;
-        color: $gris;
+        a{
+            color: $gris;
+        }
     }
 }  

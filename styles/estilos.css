@@ -35,10 +35,15 @@ p {
   border: #f08fd4 solid 2px;
   border-radius: 30px;
   font-size: 2rem;
+}
+.button a, .somos-diferentes .texto-somos button a, .somos .texto-somos button a, .hacer button a, .nosotros .texto button a {
   color: #f08fd4;
+  text-decoration: none;
 }
 .button:hover, .somos-diferentes .texto-somos button:hover, .somos .texto-somos button:hover, .hacer button:hover, .nosotros .texto button:hover {
   background-color: #f08fd4;
+}
+.button:hover a, .somos-diferentes .texto-somos button:hover a, .somos .texto-somos button:hover a, .hacer button:hover a, .nosotros .texto button:hover a {
   color: #f4f4f3;
 }
 
@@ -115,6 +120,10 @@ p {
   border: black solid 1.5px;
   border-radius: 30px;
   font-size: 2rem;
+  color: black;
+}
+.banner button a {
+  text-decoration: none;
   color: black;
 }
 .banner button:hover {
